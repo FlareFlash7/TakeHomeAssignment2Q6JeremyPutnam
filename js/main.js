@@ -1,4 +1,4 @@
-//list of quotes 
+/*list of quotes*/ 
 const quotes = [
     "A rose by any other name would smell as sweet. — William Shakespeare",
     "All that glitters is not gold. — 	William Shakespeare",
@@ -12,15 +12,15 @@ const quotes = [
     "Not all those who wander are lost. — J. R. R. Tolkein"
 ];
 
-// Get HTML elements
+/*get HTML elements*/
 const btn = document.getElementById("quoteBtn");
 const display = document.getElementById("quoteDisplay");
 
-//code for when the button is pressed
+/*code for when the button is pressed*/
 btn.addEventListener("click", function () {
-    // Picks a random index
+    /*picks a random index*/
     const randomIndex = Math.floor(Math.random() * quotes.length);
 
-    // Display the quote on the webpage
+    /*display the quote on the webpage*/
     display.textContent = quotes[randomIndex];
 });
