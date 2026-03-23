@@ -1,30 +1,26 @@
-// ---------------------------------------------------------
-// Static list of 10 famous quotes (stored locally in JS)
-// ---------------------------------------------------------
+//list of quotes 
 const quotes = [
-    "The only thing we have to fear is fear itself. — Franklin D. Roosevelt",
-    "In the middle of difficulty lies opportunity. — Albert Einstein",
-    "Success is not final, failure is not fatal. — Winston Churchill",
-    "Be the change that you wish to see in the world. — Mahatma Gandhi",
-    "Life is really simple, but we insist on making it complicated. — Confucius",
-    "The journey of a thousand miles begins with one step. — Lao Tzu",
-    "Happiness depends upon ourselves. — Aristotle",
-    "What you do speaks so loudly that I cannot hear what you say. — Ralph Waldo Emerson",
-    "The future belongs to those who prepare for it today. — Malcolm X",
-    "It always seems impossible until it’s done. — Nelson Mandela"
+    "A rose by any other name would smell as sweet. — William Shakespeare",
+    "All that glitters is not gold. — 	William Shakespeare",
+    "All the world’s a stage, and all the men and women merely players. — 	William Shakespeare",
+    "Elementary, my dear Watson. — 	Sherlock Holmes",
+    "Genius is one percent inspiration and ninety-nine percent perspiration. — Thomas Edison",
+    "I'll be back. — Terminator",
+    "I've got a feeling we're not in Kansas anymore. — Dorothy",
+    "Life is like riding a bicycle. To keep your balance, you must keep moving. — Albert Einstein",
+    "May the Force be with you. — Star Wars ",
+    "Not all those who wander are lost. — J. R. R. Tolkein"
 ];
 
 // Get HTML elements
 const btn = document.getElementById("quoteBtn");
 const display = document.getElementById("quoteDisplay");
 
-// ---------------------------------------------------------
-// Event listener for left-click on the button
-// ---------------------------------------------------------
+//code for when the button is pressed
 btn.addEventListener("click", function () {
-    // Pick a random index
+    // Picks a random index
     const randomIndex = Math.floor(Math.random() * quotes.length);
 
-    // Display the quote dynamically on the webpage
+    // Display the quote on the webpage
     display.textContent = quotes[randomIndex];
 });
